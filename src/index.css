@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#clock {
+  font-size: 100px;
+  margin-top: 150px;
+}
+
