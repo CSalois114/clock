@@ -11,7 +11,7 @@ export default function Clock() {
     return () => clearInterval(updateDate)
   }, [])
 
-  const spacer = <span className="spacer">:</span>
+  const colonSpacer = <span className="break">:</span>
   const addSpacerZero = time => time < 10 ? `0${time}` : time
   
 
@@ -21,13 +21,13 @@ export default function Clock() {
         {addSpacerZero(date.getHours() % 12)} 
       </span>
 
-      {spacer}
+      {colonSpacer}
 
       <span id="minutes" className='value'>
         {addSpacerZero(date.getMinutes())}
       </span>
 
-      {spacer}
+      {colonSpacer}
 
       <span id="seconds" className='value'>
           {addSpacerZero(date.getSeconds())}
