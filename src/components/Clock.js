@@ -12,23 +12,25 @@ export default function Clock() {
   }, [])
 
   const spacer = <span className="spacer">:</span>
+  const addSpacerZero = time => time < 10 ? `0${time}` : time
+  
 
   return (
     <div id="clock">
       <span id="hours" className='value'>
-        {date.getHours() % 12} 
+        {addSpacerZero(date.getHours() % 12)} 
       </span>
 
       {spacer}
 
       <span id="minutes" className='value'>
-        {date.getMinutes()}
+        {addSpacerZero(date.getMinutes())}
       </span>
 
       {spacer}
 
       <span id="seconds" className='value'>
-          {date.getSeconds()}
+          {addSpacerZero(date.getSeconds())}
       </span>
 
       <span id="meridiem" className='value'>
