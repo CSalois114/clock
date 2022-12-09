@@ -19,6 +19,5 @@ code {
 
 .value {
   display: inline-block;
-  text-align: center;
-  width: 120px;
+  font-variant-numeric: tabular-nums;
 }
