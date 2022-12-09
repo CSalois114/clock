@@ -18,7 +18,7 @@ export default function Clock() {
   return (
     <div id="clock">
       <span id="hours" className='value'>
-        {addSpacerZero(date.getHours() % 12)} 
+        {addSpacerZero(date.getHours() % 12 || 12 )} 
       </span>
 
       {colonSpacer}
