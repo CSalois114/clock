@@ -27,3 +27,8 @@ code {
   margin-top: 17px;
   position: absolute;
 }
+
+.break {
+  position: relative;
+  top: -11px;
+}
